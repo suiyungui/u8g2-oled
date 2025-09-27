@@ -1,0 +1,152 @@
+# STM32 Embedded Development .gitignore
+
+# Build outputs
+/build/
+/Debug/
+/Release/
+*.bin
+*.hex
+*.elf
+*.map
+*.lst
+*.o
+*.obj
+*.d
+*.su
+
+# MDK-ARM / Keil µVision
+*.uvoptx
+*.uvprojx
+*.uvguix
+*.scvd
+*.axf
+*.htm
+*.lnp
+*.dep
+RTE/
+Listings/
+Objects/
+*.bak
+*.orig
+
+# IAR EWARM
+EWARM/settings/
+EWARM/Debug/
+EWARM/Release/
+*.eww
+*.ewt
+*.ewd
+*.dep
+
+# STM32CubeIDE / Eclipse
+.metadata/
+.settings/
+*.project
+*.cproject
+*.workspace
+Debug*/
+Release*/
+
+# Code generation artifacts
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+*.lnk
+
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Documentation build
+/docs/_build/
+/docs/build/
+
+# Python virtual environments (if using for scripts)
+venv/
+env/
+.env
+
+# Logs
+*.log
+
+# Temporary editor files
+*~
+*.swp
+*.swo
+
+# Generated documentation
+/html/
+/latex/
+
+# Package manager files
+*.tar.gz
+*.zip
+
+# Backup files
+*.backup
+*.old
+
+# Custom user configurations (keep template versions)
+*_user.h
+*_local.h
+
+# Hardware-specific files that might contain sensitive info
+*.jlink
+*.openocd
+
+# Simulation files
+*.wdb
+
+# Memory analysis files
+*.memdump
+
+# Profiling results
+*.prof
+
+# Core dumps
+core.*
+
+# Static analysis results
+/cppcheck-report/
+/static-analysis/
+
+# Test results
+/test-results/
+*.xml
+junit.xml
+
+# Coverage reports
+/coverage/
+*.gcov
+*.gcda
+*.gcno
+lcov.info
+
+# Performance analysis
+*.perf
+*.callgrind
+
+# Security scan results
+/security-scan/
+*.sarif
